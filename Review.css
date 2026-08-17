@@ -1,0 +1,291 @@
+#review{
+    width:100%;
+    min-height:180px;
+    padding:18px;
+    border:2px solid #d8e9d2;
+    border-radius:18px;
+    resize:vertical;
+    outline:none;
+    font-size:16px;
+    line-height:1.7;
+    font-family:inherit;
+    background:#fcfffb;
+    transition:.3s ease;
+    box-sizing:border-box;
+}
+
+#review::placeholder{
+    color:#999;
+}
+
+.banner-section h1{
+    color:#4CAF50;
+    text-align: center;
+    padding-top: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 span{
+    color: orange;
+}
+
+#review:hover{
+    border-color:#5fbf66;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.card{
+    
+     width: 300px;
+}
+
+#review:focus{
+    border-color:#2E7D32;
+    box-shadow:0 0 0 5px rgba(46,125,50,.15);
+    background:#fff;
+}
+
+.review-info{
+    display:flex;
+    justify-content:space-between;
+    margin-top:8px;
+    color:#777;
+    font-size:14px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn button{
+    width: 220px;
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #2E7D32, #4CAF50);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+    box-shadow: 0 8px 20px rgba(46,125,50,.25);
+    letter-spacing: .5px;
+}
+
+.btn button:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(46,125,50,.35);
+    background: linear-gradient(135deg, #256628, #43A047);
+}
+
+.btn button:active{
+    transform: scale(.97);
+}
+
+.btn button::before{
+    content: "🌱 ";
+}
+
+.emoji{
+    font-size:70px;
+    animation:pop .35s ease;
+}
+
+@keyframes pop{
+    0%{
+        transform:scale(.6);
+    }
+    50%{
+        transform:scale(1.2);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+.feedback{
+    margin-top:25px;
+    text-align:center;
+}
+
+.emoji{
+    font-size:70px;
+    transition:.3s;
+}
+
+#feedbackText{
+    margin-top:10px;
+    font-size:18px;
+    color:#444;
+    font-weight:500;
+}
+
+
+
+.review-heading{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1d2433;
+    margin: 50px 0;
+    font-family: Georgia, serif;
+}
+
+.review-heading span{
+    display: inline-block;
+    background: linear-gradient(135deg,#2E7D32,#4CAF50);
+    color: #fff;
+    padding: 8px 20px;
+    margin-left: 10px;
+    border-radius: 8px;
+    box-shadow: 0 8px 18px rgba(46,125,50,.25);
+}
+
+.review-heading span{
+    background: #2E7D32;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: .9em;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    z-index: 1000;
+}
+.logo-container img{
+    width:90px;
+    transition:.35s;
+}
+
+.logo-container img:hover{
+    transform:rotate(-6deg) scale(1.08);
+}
+
+.navlinks{
+    display:flex;
+    gap:45px;
+}
+
+.navlinks a{
+
+    position:relative;
+    text-decoration:none;
+    color:#1f2937;
+    font-weight:600;
+    font-size:17px;
+    transition:.3s;
+}
+
+.navlinks a::after{
+
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+
+    width:0;
+    height:3px;
+
+    background:#2E7D32;
+    border-radius:20px;
+
+    transition:.35s;
+}
+
+.navlinks a:hover{
+
+    color:#2E7D32;
+
+}
+
+.navlinks a:hover::after{
+
+    width:100%;
+
+}
+
+.icon-container{
+
+    width:48px;
+    height:48px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#fff;
+
+    border-radius:14px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.navlinks a:hover{
+
+transform:translateY(-2px);
+
+}
+
+header::after{
+
+content:"";
+
+position:absolute;
+
+bottom:0;
+left:0;
+
+width:100%;
+height:3px;
+
+background:
+linear-gradient(
+90deg,
+#2E7D32,
+#66BB6A,
+#2E7D32
+);
+
+}
+
+.btn button{
+    position: relative;
+    overflow: hidden;
+}
+
+.btn button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,.3);
+    transform: skewX(-25deg);
+    transition: .6s;
+}
+
