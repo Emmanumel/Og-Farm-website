@@ -288,6 +288,8 @@ function saveCart() {
         JSON.stringify(cart)
     );
 
+    window.dispatchEvent(new Event("cart:updated"));
+
 
     displayCart();
 

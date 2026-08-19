@@ -100,7 +100,7 @@ body {
 }
 
 .logo span{
-    color:orange; 
+    color:#7caf3a;
 }
 
 
@@ -492,7 +492,7 @@ body {
 
     text-align: center;
 
-    padding: 60px 20px;
+    padding: 0 20px 60px;
 
     background:
         radial-gradient(
@@ -503,7 +503,7 @@ body {
         linear-gradient(
             135deg,
             #eff9f0,
-            #fffaf0
+            #f4fbf4
         );
 }
 
@@ -1011,7 +1011,7 @@ body {
 .rating label:hover,
 .rating label:hover ~ label {
 
-    color: #ffc928;
+    color: #7caf3a;
 
     transform: scale(1.1);
 }
@@ -1019,7 +1019,7 @@ body {
 
 .rating input:checked ~ label {
 
-    color: #ffc928;
+    color: #7caf3a;
 
     text-shadow:
         0 0 12px rgba(255,201,40,.35);

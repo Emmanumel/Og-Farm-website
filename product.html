@@ -6,6 +6,7 @@
     <title>Product page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="navigation.css">
 </head>
 <body>
 
@@ -46,9 +47,9 @@
 </div>
             </div>
 
-            <a href="#">Login</a>
+            <a href="./login.html">Login</a>
 
-            <a href="#">Sign Up</a>
+            <a href="./register.html">Sign Up</a>
 
         </div>
 
@@ -111,28 +112,20 @@
 
 </a>
 
-            </a>
-
-            <a href="#" class="account">
+            <a href="login.html" class="account" aria-label="Log in or manage your account">
                 <i class="fa-solid fa-user"></i>
             </a>
 
         </div>
 
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
     </div>
-
-
     <!-- Navigation -->
-    <nav class="navbar">
-
-        <a href="./index.html">Home</a>
-        <a href="./About.html">About</a>
-        <a href="./product.html" class="active">Product</a>
-        <a href="./Cart.html">Cart</a>
-        <a href="./Checkout.html">Checkout</a>
-        <a href="./Reviews.html">Reviews</a>
-        <a href="">Categories</a>
-
+    <nav class="navbar" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="product.html" class="active" aria-current="page">Products</a>
+        <a href="Reviews.html">Reviews</a>
     </nav>
 
 </header>
@@ -839,5 +832,6 @@
 
     
     <script src="product.js"></script>
+    <script src="navigation.js"></script>
 </body>
 </html>

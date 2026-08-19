@@ -307,7 +307,8 @@ productCards.forEach(card => {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const addButtons = document.querySelectorAll(".add-cart");
+    // Kept inactive while the single cart handler below owns button behavior.
+    const addButtons = document.querySelectorAll(".legacy-add-cart");
 
     addButtons.forEach(button => {
 
@@ -448,15 +449,7 @@ document.addEventListener("DOMContentLoaded", () => {
             cartCount.textContent = totalItems;
 
 
-            if (totalItems === 0) {
-
-                cartCount.classList.add("hidden");
-
-            } else {
-
-                cartCount.classList.remove("hidden");
-
-            }
+            cartCount.classList.remove("hidden");
 
         }
 
@@ -489,11 +482,11 @@ document.addEventListener("DOMContentLoaded", () => {
             if (productExists) {
 
                 button.innerHTML =
-                    '<i class="fa-solid fa-check"></i> Added';
+                    '<i class="fa-solid fa-trash-can"></i> Remove';
 
                 button.classList.add("added");
 
-                button.disabled = true;
+                button.disabled = false;
 
             } else {
 
@@ -546,36 +539,34 @@ document.addEventListener("DOMContentLoaded", () => {
                 card.querySelector(".product-image img")
                     .getAttribute("src");
 
+            const quantity = Number(
+                card.querySelector(".quantity")?.textContent
+            ) || 1;
 
-            // ==================================
-            // ALWAYS ADD 1
-            // ==================================
 
             const existingProduct =
-                cart.find(product =>
-                    product.name === name
-                );
+                cart.findIndex(product => product.name === name);
 
 
-            if (existingProduct) {
+            if (existingProduct !== -1) {
 
-                // Don't add another one
-                return;
+                cart.splice(existingProduct, 1);
+
+            } else {
+
+                cart.push({
+
+                    name: name,
+
+                    price: price,
+
+                    image: image,
+
+                    quantity: quantity
+
+                });
 
             }
-
-
-            cart.push({
-
-                name: name,
-
-                price: price,
-
-                image: image,
-
-                quantity: 1
-
-            });
 
 
             // Save
@@ -583,6 +574,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 "cart",
                 JSON.stringify(cart)
             );
+
+            window.dispatchEvent(new Event("cart:updated"));
 
 
             // Update everything

@@ -6,6 +6,7 @@
     <title>OGFarm - Organic Farm Website in Nigeria</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navigation.css">
       
 
     
@@ -50,9 +51,9 @@
           
             </div>
 
-            <a href="#">Login</a>
+            <a href="./login.html">Login</a>
 
-            <a href="#">Sign Up</a>
+            <a href="./register.html">Sign Up</a>
 
         </div>
 
@@ -115,26 +116,20 @@
 
 </a>
 
-            </a>
-
-            <a href="#" class="account">
+            <a href="login.html" class="account" aria-label="Log in or manage your account">
                 <i class="fa-solid fa-user"></i>
             </a>
 
         </div>
 
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
     </div>
-
-
     <!-- Navigation -->
-    <nav class="navbar">
-        <a href="./About.html"  class="active">Home</a>
-        <a href="./About.html">About</a>
-        <a href="./product.html">Products</a>
-        <a href="./cart.html">My Cart</a>
-        <a href="./checkout.html">Checkout</a>
-        <a href="./Reviews.html">Reviews</a>
-
+    <nav class="navbar" aria-label="Primary navigation">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="About.html">About</a>
+        <a href="product.html">Products</a>
+        <a href="Reviews.html">Reviews</a>
     </nav>
 
 </header>
@@ -223,26 +218,26 @@
     <section class="counter-section">
     <div class="counter-box">
       <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z"/></svg></div>
-      <p>Our Experience</p>
-      <div class="counter" data-target="12345">0</div>
+      <p>Years of Experience</p>
+      <div class="counter" data-target="40" data-suffix="+">0</div>
     </div>
   
     <div class="counter-box">
       <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 1200 1200"><path fill="currentColor" d="M596.847 188.488c-103.344 0-187.12 97.81-187.12 218.465c0 83.678 40.296 156.352 99.468 193.047l-68.617 31.801l-182.599 84.688c-17.64 8.821-26.444 23.778-26.444 44.947v201.102c1.451 25.143 16.537 48.577 40.996 48.974h649.62c27.924-2.428 42.05-24.92 42.325-48.974V761.436c0-21.169-8.804-36.126-26.443-44.947l-175.988-84.688l-73.138-34.65c56.744-37.521 95.061-108.624 95.061-190.197c-.001-120.656-83.778-218.466-187.121-218.466m-301.824 76.824c-44.473 1.689-79.719 20.933-106.497 51.596c-29.62 36.918-44.06 80.75-44.339 124.354c1.819 64.478 30.669 125.518 82.029 157.446L21.163 693.997C7.05 699.289 0 711.636 0 731.041v161.398c1.102 21.405 12.216 39.395 33.055 39.703h136.284V761.436c2.255-45.639 23.687-82.529 62.196-100.531l136.247-64.817c10.584-6.175 20.731-14.568 30.433-25.152c-56.176-86.676-63.977-190.491-27.773-281.801c-23.547-14.411-50.01-23.672-75.419-23.823m608.586 0c-29.083.609-55.96 11.319-78.039 26.444c35.217 92.137 25.503 196.016-26.482 276.52c11.467 13.23 23.404 23.377 35.753 30.434l130.965 62.195c39.897 21.881 60.47 59.098 60.866 100.532v170.707h140.235c23.063-1.991 32.893-20.387 33.093-39.704V731.042c0-17.641-7.05-29.987-21.163-37.045l-202.431-96.618c52.498-38.708 78.859-96.72 79.369-156.117c-1.396-47.012-15.757-90.664-44.339-124.354c-29.866-32.399-66.91-51.253-107.827-51.596"/></svg></div>
-      <p>Farm Specialist</p>
-      <div class="counter" data-target="12345">0</div>
+      <p>Farm Partners</p>
+      <div class="counter" data-target="25" data-suffix="+">0</div>
     </div>
   
     <div class="counter-box">
       <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="currentColor" d="m9 20.42l-6.21-6.21l2.83-2.83L9 14.77l9.88-9.89l2.83 2.83z"/></svg></div>
-      <p>Complete Project</p>
-      <div class="counter" data-target="12345">0</div>
+      <p>Fresh Products</p>
+      <div class="counter" data-target="20" data-suffix="+">0</div>
     </div>
   
     <div class="counter-box">
       <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="currentColor" fill-opacity="0" d="M17 14v4c0 1.66 -1.34 3 -3 3h-6c-1.66 0 -3 -1.34 -3 -3v-4Z"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.5s" values="0;1"/></path><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="48" stroke-dashoffset="48" d="M17 9v9c0 1.66 -1.34 3 -3 3h-6c-1.66 0 -3 -1.34 -3 -3v-9Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="48;0"/></path><path stroke-dasharray="14" stroke-dashoffset="14" d="M17 9h3c0.55 0 1 0.45 1 1v3c0 0.55 -0.45 1 -1 1h-3"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="14;0"/></path><mask id="SVGnGEayvOG"><path stroke="#fff" d="M8 0c0 2-2 2-2 4s2 2 2 4-2 2-2 4 2 2 2 4M12 0c0 2-2 2-2 4s2 2 2 4-2 2-2 4 2 2 2 4M16 0c0 2-2 2-2 4s2 2 2 4-2 2-2 4 2 2 2 4"><animateMotion calcMode="linear" dur="3s" path="M0 0v-8" repeatCount="indefinite"/></path></mask><rect width="24" height="0" y="7" fill="currentColor" mask="url(#SVGnGEayvOG)"><animate fill="freeze" attributeName="y" begin="0.8s" dur="0.6s" values="7;2"/><animate fill="freeze" attributeName="height" begin="0.8s" dur="0.6s" values="0;5"/></rect></g></svg></div>
-      <p>Happy Clients</p>
-      <div class="counter" data-target="12345">0</div>
+      <p>Happy Customers</p>
+      <div class="counter" data-target="100" data-suffix="+">0</div>
     </div>
   </section>
 
@@ -340,10 +335,9 @@
             <h3>Quick Links</h3>
 
             <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="about.html">About Us</a>
-            <a href="reviews.html">Reviews</a>
-            <a href="contact.html">Contact</a>
+            <a href="product.html">Products</a>
+            <a href="About.html">About Us</a>
+            <a href="Reviews.html">Reviews</a>
         </div>
 
 
@@ -390,6 +384,7 @@
     </div>
   </footer>
   <script src="script.js"></script>
+  <script src="navigation.js"></script>
 </body>
 </html>
 

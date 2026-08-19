@@ -70,15 +70,19 @@ document.addEventListener('click', (e) => {
     counters.forEach(counter => {
       const animate = () => {
         const value = +counter.getAttribute('data-target');
-        const current = +counter.innerText;
+        const suffix = counter.getAttribute('data-suffix') || '';
+        const current = Number(counter.dataset.current || 0);
+        const formatValue = number => number.toLocaleString('en-US');
 
         const increment = Math.ceil(value / speed);
 
         if (current < value) {
-          counter.innerText = current + increment;
+          const next = Math.min(current + increment, value);
+          counter.dataset.current = next;
+          counter.innerText = formatValue(next) + suffix;
           setTimeout(animate, 20);
         } else {
-          counter.innerText = value;
+          counter.innerText = formatValue(value) + suffix;
         }
       };
 

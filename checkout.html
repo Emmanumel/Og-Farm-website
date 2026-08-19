@@ -16,6 +16,7 @@
 
     <!-- Checkout CSS -->
     <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="navigation.css">
 </head>
 
 <body>
@@ -58,9 +59,9 @@
           
             </div>
 
-            <a href="#">Login</a>
+            <a href="login.html">Login</a>
 
-            <a href="#">Sign Up</a>
+            <a href="register.html">Sign Up</a>
 
         </div>
 
@@ -123,26 +124,20 @@
 
 </a>
 
-            </a>
-
-            <a href="#" class="account">
+            <a href="login.html" class="account" aria-label="Log in or manage your account">
                 <i class="fa-solid fa-user"></i>
             </a>
 
         </div>
 
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
     </div>
-
-
     <!-- Navigation -->
-    <nav class="navbar">
-        <a href="./About.html"  class="active">Home</a>
-        <a href="./About.html">About</a>
-        <a href="./product.html">Products</a>
-        <a href="./cart.html">My Cart</a>
-        <a href="./checkout.html">Checkout</a>
-        <a href="./Reviews.html">Reviews</a>
-
+    <nav class="navbar" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="product.html">Products</a>
+        <a href="Reviews.html">Reviews</a>
     </nav>
 
 </header>
@@ -456,6 +451,7 @@
     =============================== -->
 
     <script src="checkout.js"></script>
+    <script src="navigation.js"></script>
 
 </body>
 

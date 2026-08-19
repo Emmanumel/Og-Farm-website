@@ -1,4 +1,4 @@
-a<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,6 +26,7 @@ a<!DOCTYPE html>
         rel="stylesheet"
         href="About.css"
     >
+    <link rel="stylesheet" href="navigation.css">
 </head>
 <body>
 
@@ -67,9 +68,9 @@ a<!DOCTYPE html>
           
             </div>
 
-            <a href="#">Login</a>
+            <a href="./login.html">Login</a>
 
-            <a href="#">Sign Up</a>
+            <a href="./register.html">Sign Up</a>
 
         </div>
 
@@ -132,26 +133,20 @@ a<!DOCTYPE html>
 
 </a>
 
-            </a>
-
-            <a href="#" class="account">
+            <a href="login.html" class="account" aria-label="Log in or manage your account">
                 <i class="fa-solid fa-user"></i>
             </a>
 
         </div>
 
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
     </div>
-
-
     <!-- Navigation -->
-    <nav class="navbar">
-        <a href="./index.html">Home</a>
-        <a href="./About.html" class="active">About</a>
-        <a href="./product.html">Products</a>
-        <a href="./cart.html">My Cart</a>
-        <a href="./checkout.html">Checkout</a>
-        <a href="./Reviews.html">Reviews</a>
-
+    <nav class="navbar" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="About.html" class="active" aria-current="page">About</a>
+        <a href="product.html">Products</a>
+        <a href="Reviews.html">Reviews</a>
     </nav>
 
 </header>
@@ -792,7 +787,7 @@ a<!DOCTYPE html>
                 About
             </a>
 
-            <a href="Review.html">
+            <a href="Reviews.html">
                 Reviews
             </a>
 
@@ -811,5 +806,6 @@ a<!DOCTYPE html>
 </body>
 </html>
 <script src="about.js"></script>
+<script src="navigation.js"></script>
 </body>
 </html>

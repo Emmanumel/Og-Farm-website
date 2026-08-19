@@ -143,7 +143,7 @@ html {
 }
 
 .logo span{
-    color:orange; 
+    color:#7caf3a;
 }
 
 
@@ -626,9 +626,9 @@ img {
 
     border-radius: 8px;
 
-    background: #fff0f1;
+    background: #e8f5e9;
 
-    color: #e63946;
+    color: #1f6725;
 
     cursor: pointer;
 
@@ -636,7 +636,7 @@ img {
 }
 
 .delete-btn:hover {
-    background: #e63946;
+    background: #1f6725;
     color: white;
 }
 
@@ -704,7 +704,7 @@ img {
 
 
 .clear-btn {
-    background: #e63946;
+    background: #1f6725;
 }
 
 .clear-btn:hover {
