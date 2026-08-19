@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+    <header class="product-header">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+
+        <div class="help-center">
+            <i class="fa-solid fa-phone"></i>
+            <span>Help Center: +234 808 414 2624</span>
+        </div>
+
+        <div class="top-right">
+
+            <div class="location-select">
+              
+               
+                <div class="country-select">
+
+    <img id="countryFlag" src="https://flagcdn.com/w40/ng.png" alt="Nigeria">
+
+    <select id="country">
+
+        <option value="ng">Nigeria</option>
+        <option value="gh">Ghana</option>
+        <option value="ke">Kenya</option>
+        <option value="za">South Africa</option>
+        <option value="eg">Egypt</option>
+        <option value="ma">Morocco</option>
+        <option value="tz">Tanzania</option>
+        <option value="ug">Uganda</option>
+        <option value="rw">Rwanda</option>
+        <option value="cm">Cameroon</option>
+
+    </select>
+
+</div>
+            </div>
+
+            <a href="#">Login</a>
+
+            <a href="#">Sign Up</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Main Header -->
+    <div class="main-header">
+
+        <div class="logo">
+            <a href="index.html">OG<span>Farm</span></a>
+        </div>
+
+
+        <div class="search-box">
+
+            <input
+                type="search"
+                placeholder="Search fruits, vegetables, seeds..."
+            >
+
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+<div class="delivery">
+
+    <i class="fa-solid fa-location-dot"></i>
+
+    <div class="delivery-select">
+
+        <small>Deliver to</small>
+
+        <div class="location-dropdowns">
+
+            <select id="stateSelect">
+                <option selected disabled>Select State</option>
+            </select>
+
+            <select id="lgaSelect">
+                <option selected disabled>Select LGA</option>
+            </select>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+        <div class="header-icons">
+
+            <a href="cart.html" class="cart-link">
+
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    <span class="cart-count" id="cartCount">0</span>
+
+</a>
+
+            </a>
+
+            <a href="#" class="account">
+                <i class="fa-solid fa-user"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <a href="./index.html">Home</a>
+        <a href="./About.html">About</a>
+        <a href="./product.html" class="active">Product</a>
+        <a href="./Cart.html">Cart</a>
+        <a href="./Checkout.html">Checkout</a>
+        <a href="./Reviews.html">Reviews</a>
+        <a href="">Categories</a>
+
+    </nav>
+
+</header>
+<section class="hero">
+
+    <div class="hero-left">
+
+        <span class="hero-tag">
+                <span class="hero-tag">
+            🌱 Fresh From The Farm
+        </span>
+        </span>
+
+        <h1 class="hero-title"></h1>
+
+        <p class="hero-description"></p>
+
+        <div class="hero-buttons">
+            <button class="shop-btn">Shop Now</button>
+            <button class="explore-btn">Explore</button>
+        </div>
+
+        <div class="hero-stats">
+            <div>
+                <h2>5K+</h2>
+                <span>Products</span>
+            </div>
+
+            <div>
+                <h2>36</h2>
+                <span>States</span>
+            </div>
+
+            <div>
+                <h2>20K+</h2>
+                <span>Happy Customers</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="hero-right">
+
+        <div class="hero-circle"></div>
+
+        <img class="hero-image" alt="Featured Product">
+
+        <div class="product-preview">
+
+            <h3 class="product-name"></h3>
+
+            <p class="product-desc"></p>
+
+            <div class="price"></div>
+
+            <button>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+
+        </div>
+
+    </div>
+    <div class="slider-dots">
+
+    <span class="dot active"></span>
+
+    <span class="dot"></span>
+
+    <span class="dot"></span>
+
+    <span class="dot"></span>
+
+</div>
+
+</section id= "product-filters"> 
+<div class="product-filters">
+    <button class="filter-btn active" data-category="all">
+        All
+    </button>
+    <button class="filter-btn" data-category="Vegetables">
+        Vegetables
+    </button>
+    <button class="filter-btn" data-category="Fruits">
+        Fruits
+    </button>
+    <button class="filter-btn" data-category="Tubers">
+        Tubers
+    </button>
+    <button class="filter-btn" data-category="Livestock">
+        Livestock
+    </button>
+
+
+</div>
+</section>
+
+<div class="products-grid">
+
+    <!-- Product Card -->
+    <div class="product-card" data-category="Vegetables">
+
+        <div class="product-image">
+            <img src="./ABOUT_IMG_FOLDER/corn-maize.jpg" alt="Fresh Sweet Corn">
+
+            <span class="product-badge">Fresh</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+        </div>
+
+        <div class="product-info"   data-category="Vegetables">
+
+            <span class="product-category">Vegetables</span>
+            <h3>Fresh Sweet Corn</h3>
+            <p class="product-description">
+                Fresh, sweet and farm-grown Maize.
+            </p>
+
+            <div class="product-bottom">
+                <div class="product-price">
+                    <span>₦2,500</span>
+                    <small>/kg</small>
+                </div>
+
+                
+                <div class="quantity-control">
+
+    <button class="quantity-btn decrease">−</button>
+
+    <span class="quantity">1</span>
+
+    <button class="quantity-btn increase">+</button>
+                    
+</div>
+
+
+                
+                <button class="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add
+                </button>
+
+
+                
+            </div>
+
+        </div>
+
+    </div>
+
+     <div class="product-card"  data-category="Livestock">
+
+        <div class="product-image">
+            <img src="Product_imgs/roastedfish.jpeg" alt="Roasted Catfish">
+
+            <span class="product-badge">Fresh</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+        </div>
+
+        <div class="product-info">
+
+            <span class="product-category">Livestock</span>
+
+            <h3>Roasted Catfish</h3>
+
+            <p class="product-description">
+                Smokey,roasted Catfish.
+            </p>
+
+            <div class="product-bottom">
+
+                <div class="product-price">
+                    <span>₦3,500</span>
+                    <small>/5pcs</small>
+                </div>
+
+
+                         <div class="quantity-control">
+
+    <button class="quantity-btn decrease">−</button>
+
+    <span class="quantity">1</span>
+
+    <button class="quantity-btn increase">+</button>
+                    
+</div>
+
+                
+
+                <button class="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+     <div class="product-card" data-category="Tubers">
+
+        <div class="product-image">
+            <img src="./ABOUT_IMG_FOLDER/white-yam.jpg" alt="Nutritious Yam">
+
+            <span class="product-badge">Fresh</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+        </div>
+
+        <div class="product-info">
+
+            <span class="product-category">Tuber</span>
+
+            <h3>White Yam</h3>
+
+            <p class="product-description">
+                Big, Nutritious Tubers of Yam.
+            </p>
+
+            <div class="product-bottom">
+
+                <div class="product-price">
+                    <span>₦5,000</span>
+                    <small>/Tuber</small>
+                </div>
+
+                         <div class="quantity-control">
+
+    <button class="quantity-btn decrease">−</button>
+
+    <span class="quantity">1</span>
+
+    <button class="quantity-btn increase">+</button>
+                    
+</div>
+
+                <button class="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+     <div class="product-card" data-category="Tubers">
+
+        <div class="product-image">
+            <img src="images/tomatoes.jpg" alt="Water Yam">
+
+            <span class="product-badge">Fresh</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+        </div>
+
+        <div class="product-info">
+
+            <span class="product-category">Tuber</span>
+
+            <h3>Water Yam</h3>
+
+            <p class="product-description">
+                Big, soft and nutritious water Yam.
+            </p>
+
+            <div class="product-bottom">
+
+                <div class="product-price">
+                    <span>₦3,500</span>
+                    <small> /Tuber</small>
+                </div>
+
+                         <div class="quantity-control">
+
+    <button class="quantity-btn decrease">−</button>
+
+    <span class="quantity">1</span>
+
+    <button class="quantity-btn increase">+</button>
+                    
+</div>
+
+                <button class="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+     <div class="product-card" data-category="Fruits">
+
+        <div class="product-image">
+            <img src="images/tomatoes.jpg" alt="Pawpaw fruit">
+
+            <span class="product-badge">Fresh</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+        </div>
+
+        <div class="product-info">
+
+            <span class="product-category">Fruit</span>
+
+            <h3>Fresh Pawpaw</h3>
+
+            <p class="product-description">
+                Fresh, juicy and farm-grown Pawpaw.
+            </p>
+
+            <div class="product-bottom">
+
+                <div class="product-price">
+                    <span>₦2,500</span>
+                    <small>/ basket</small>
+                </div>
+
+                         <div class="quantity-control">
+
+    <button class="quantity-btn decrease">−</button>
+
+    <span class="quantity">1</span>
+
+    <button class="quantity-btn increase">+</button>
+                    
+</div>
+
+                <button class="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+     <div class="product-card" data-category="Vegetables">
+
+        <div class="product-image">
+            <img src="./ABOUT_IMG_FOLDER/plantain.jpg" alt="Fresh Plantain">
+
+            <span class="product-badge">Fresh</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+        </div>
+
+        <div class="product-info">
+
+            <span class="product-category">Vegetables</span>
+
+            <h3>Fresh Plantain</h3>
+
+            <p class="product-description">
+                Fresh, Sweet and ripe Plantain.
+            </p>
+
+            <div class="product-bottom">
+
+                <div class="product-price">
+                    <span>₦7,500</span>
+                    <small>/bundle</small>
+                </div>
+
+                         <div class="quantity-control">
+
+    <button class="quantity-btn decrease">−</button>
+
+    <span class="quantity">1</span>
+
+    <button class="quantity-btn increase">+</button>
+                    
+</div>
+
+                <button class="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+     <div class="product-card" data-category="Vegetables">
+
+        <div class="product-image">
+            <img src="Product_imgs/waterleaf.jpeg" alt="Fresh Vegetables">
+
+            <span class="product-badge">Fresh</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+        </div>
+
+        <div class="product-info">
+
+            <span class="product-category">Vegetables</span>
+
+            <h3>Fresh Water Leaf(Gbure)</h3>
+
+            <p class="product-description">
+                Classic Vegetable for many Efo Dishes.
+            </p>
+
+            <div class="product-bottom">
+
+                <div class="product-price">
+                    <span>₦1,500</span>
+                    <small>/ bundle</small>
+                </div>
+
+                         <div class="quantity-control">
+
+    <button class="quantity-btn decrease">−</button>
+
+    <span class="quantity">1</span>
+
+    <button class="quantity-btn increase">+</button>
+                    
+</div>
+
+                <button class="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+     <div class="product-card" data-category="Vegetables">
+
+        <div class="product-image">
+            <img src="Product_imgs/WhatsApp Image 2026-08-18 at 1.05.14 PM (1).jpeg" alt="Fresh Ewedu">
+
+            <span class="product-badge">Fresh</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+        </div>
+
+        <div class="product-info">
+
+            <span class="product-category">Vegetables</span>
+
+            <h3>Fresh Jute(Ewedu)</h3>
+
+            <p class="product-description">
+                Fresh and healthy Ewedu(Jute) stalks.
+            </p>
+
+            <div class="product-bottom">
+
+                <div class="product-price">
+                    <span>₦2,000</span>
+                    <small>/ bundle</small>
+                </div>
+
+                         <div class="quantity-control">
+
+    <button class="quantity-btn decrease">−</button>
+
+    <span class="quantity">1</span>
+
+    <button class="quantity-btn increase">+</button>
+                    
+</div>
+
+                <button class="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+     <div class="product-card" data-category="Tubers">
+
+        <div class="product-image">
+            <img src="images/tomatoes.jpg" alt="Bitter Yam">
+
+            <span class="product-badge">Fresh</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+        </div>
+
+        <div class="product-info">
+
+            <span class="product-category">Tuber</span>
+
+            <h3>Bitter Yam</h3>
+
+            <p class="product-description">
+                Bitter yams, which has many benifets.
+            </p>
+
+            <div class="product-bottom">
+
+                <div class="product-price">
+                    <span>₦3,500</span>
+                    <small>/ Tuber</small>
+                </div>
+
+                         <div class="quantity-control">
+
+    <button class="quantity-btn decrease">−</button>
+
+    <span class="quantity">1</span>
+
+    <button class="quantity-btn increase">+</button>
+                    
+</div>
+
+                <button class="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+     <div class="product-card" data-category="Fruits">
+
+        <div class="product-image">
+            <img src="Product_imgs/coconut.jpeg" alt="Fresh Coconuts">
+
+            <span class="product-badge">Fresh</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+        </div>
+
+        <div class="product-info">
+
+            <span class="product-category">Fruit</span>
+
+            <h3>Fresh Coconut</h3>
+
+            <p class="product-description">
+                Fresh, juicy and farm-grown Coconuts.
+            </p>
+
+            <div class="product-bottom">
+
+                <div class="product-price">
+                    <span>₦1,500</span>
+                    <small>/unit</small>
+                </div>
+
+                         <div class="quantity-control">
+
+    <button class="quantity-btn decrease">−</button>
+
+    <span class="quantity">1</span>
+
+    <button class="quantity-btn increase">+</button>
+                    
+</div>
+
+                <button class="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+     <div class="product-card" data-category="Fruits">
+
+        <div class="product-image">
+            <img src="./ABOUT_IMG_FOLDER/pineapple-plant.jpg" alt="Fresh Pineapple">
+
+            <span class="product-badge">Fresh</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+        </div>
+
+        <div class="product-info">
+
+            <span class="product-category">Fruit</span>
+
+            <h3>Fresh Pineapple</h3>
+
+            <p class="product-description">
+                Fresh, juicy and sweet Pineapple
+            </p>
+
+            <div class="product-bottom">
+
+                <div class="product-price">
+                    <span>₦5,500</span>
+                    <small>/unit</small>
+                </div>
+
+                         <div class="quantity-control">
+
+    <button class="quantity-btn decrease">−</button>
+
+    <span class="quantity">1</span>
+
+    <button class="quantity-btn increase">+</button>
+                    
+</div>
+
+                <button class="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+     <div class="product-card" data-category="Vegetables">
+
+        <div class="product-image">
+            <img src="images/tomatoes.jpg" alt="Garden egg">
+
+            <span class="product-badge">Fresh</span>
+
+            <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+        </div>
+
+        <div class="product-info">
+
+            <span class="product-category">Vegetables</span>
+
+            <h3>Fresh Garden Egg</h3>
+
+            <p class="product-description">
+                Local Nigerian Aubergine.
+            </p>
+
+            <div class="product-bottom">
+
+                <div class="product-price">
+                    <span>₦1,500</span>
+                    <small>/ basket</small>
+                </div>
+
+                         <div class="quantity-control">
+
+    <button class="quantity-btn decrease">−</button>
+
+    <span class="quantity">1</span>
+
+    <button class="quantity-btn increase">+</button>
+                    
+</div>
+
+                <button class="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<button class="wishlist-btn" onclick="toggleWishlist(this)">
+    <i class="fa-regular fa-heart"></i>
+</button>
+
+
+    
+    <script src="product.js"></script>
+</body>
+</html>

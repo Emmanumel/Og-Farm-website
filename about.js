@@ -28,3 +28,35 @@ document.addEventListener('click', (e) => {
     hamburger.classList.remove('active');
   }
 });
+
+
+const menuBtn =
+    document.getElementById("menuBtn");
+
+const navbar =
+    document.getElementById("navbar");
+
+
+menuBtn.addEventListener("click", () => {
+
+    navbar.classList.toggle("open");
+
+    const icon =
+        menuBtn.querySelector("i");
+
+
+    if (navbar.classList.contains("open")) {
+
+        icon.classList.remove("fa-bars");
+
+        icon.classList.add("fa-xmark");
+
+    } else {
+
+        icon.classList.remove("fa-xmark");
+
+        icon.classList.add("fa-bars");
+
+    }
+
+});

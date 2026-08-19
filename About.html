@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+a<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,45 +8,556 @@
 
 </head>
 <body>
-    <header class="header-container">
-        <div class="logo">
-            <img src="./ABOUT_IMG_FOLDER/Logo copy.png" alt="Logo" />
-        </div>
-        <nav class="navbar-container">
-            <ul class="nav-links" id="navLinks">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#about-section">About the Farm</a></li>
-                <li><a href="#crops-section">Our Crops</a></li>
-                <li><a href="#livestock-section">Our Livestock</a></li>
-                <li><a href="#seeds-section">Our Seedlings</a></li>
-                <li><a href="#Vision">Our Vision</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
-    <section id="about-section"></section>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>OG Farm | About Us</title>
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+    <link
+        rel="stylesheet"
+        href="About.css"
+    >
+</head>
+<body>
 
-    <section class="about-section">
-        <div class="about-content">
-            <div class="about-text">
-                <h2>About the Farm</h2>
-                <p>At <strong>OG Farm</strong>, we believe in the power of sustainable agriculture to feed communities and nurture the environment. Our farm spans over <strong>8 acres</strong> of fertile land where we cultivate a variety of fresh crops, raise healthy livestock, and produce high-quality seeds for farmers across the region.</p>
-                
-                <p>We combine <em>modern farming techniques</em> with traditional knowledge, ensuring every harvest is abundant and healthy. From our organic maize fields to our thriving poultry units, we are committed to quality and sustainability in every step.</p>
+       <header class="product-header">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+
+        <div class="help-center">
+            <i class="fa-solid fa-phone"></i>
+            <span>Help Center: +234 808 414 2624</span>
+        </div>
+
+        <div class="top-right">
+
+            <div class="location-select">
+         
+               
+                <div class="country-select">
+
+    <img id="countryFlag" src="https://flagcdn.com/w40/ng.png" alt="Nigeria">
+
+    <select id="country">
+
+        <option value="ng">Nigeria</option>
+        <option value="gh">Ghana</option>
+        <option value="ke">Kenya</option>
+        <option value="za">South Africa</option>
+        <option value="eg">Egypt</option>
+        <option value="ma">Morocco</option>
+        <option value="tz">Tanzania</option>
+        <option value="ug">Uganda</option>
+        <option value="rw">Rwanda</option>
+        <option value="cm">Cameroon</option>
+
+    </select>
+
+</div>
+          
             </div>
-            <div class="about-video">
+
+            <a href="#">Login</a>
+
+            <a href="#">Sign Up</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Main Header -->
+    <div class="main-header">
+
+        <div class="logo">
+            <a href="index.html">OG<span>Farm</span></a>
+        </div>
+
+
+        <div class="search-box">
+
+            <input
+                type="search"
+                placeholder="Search fruits, vegetables, seeds..."
+            >
+
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+<div class="delivery">
+
+    <i class="fa-solid fa-location-dot"></i>
+
+    <div class="delivery-select">
+
+        <small>Deliver to</small>
+
+        <div class="location-dropdowns">
+
+            <select id="stateSelect">
+                <option selected disabled>Select State</option>
+            </select>
+
+            <select id="lgaSelect">
+                <option selected disabled>Select LGA</option>
+            </select>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+        <div class="header-icons">
+
+            <a href="cart.html" class="cart-link">
+
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    <span class="cart-count" id="cartCount">0</span>
+
+</a>
+
+            </a>
+
+            <a href="#" class="account">
+                <i class="fa-solid fa-user"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./About.html" class="active">About</a>
+        <a href="./product.html">Products</a>
+        <a href="./cart.html">My Cart</a>
+        <a href="./checkout.html">Checkout</a>
+        <a href="./Reviews.html">Reviews</a>
+
+    </nav>
+
+</header>
+
+
+
+
+
+
+
+<section class="about-hero">
+
+    <div class="hero-overlay"></div>
+
+
+    <div class="hero-content">
+
+        <span class="hero-tag">
+            🌱 Fresh • Local • Trusted
+        </span>
+
+
+        <h1>
+            Growing Goodness,
+            <span>Delivering Freshness.</span>
+        </h1>
+
+
+        <p>
+
+            At OG Farm, we're passionate about connecting
+            people with fresh, quality farm produce while
+            supporting the farmers who grow it.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="product.html"
+                class="primary-btn"
+            >
+
+                Shop Fresh Produce
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a
+                href="#our-story"
+                class="secondary-btn"
+            >
+
+                Our Story
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     QUICK STATS
+========================================== -->
+
+<section class="stats-section">
+
+    <div class="stats-container">
+
+
+        <div class="stat">
+
+            <div class="stat-icon">
+
+                <i class="fa-solid fa-seedling"></i>
+
+            </div>
+
+            <div>
+
+                <strong>
+                    100%
+                </strong>
+
+                <span>
+                    Fresh Produce
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="stat">
+
+            <div class="stat-icon">
+
+                <i class="fa-solid fa-tractor"></i>
+
+            </div>
+
+            <div>
+
+                <strong>
+                    Local
+                </strong>
+
+                <span>
+                    Nigerian Farmers
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="stat">
+
+            <div class="stat-icon">
+
+                <i class="fa-solid fa-truck"></i>
+
+            </div>
+
+            <div>
+
+                <strong>
+                    Fast
+                </strong>
+
+                <span>
+                    Reliable Delivery
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="stat">
+
+            <div class="stat-icon">
+
+                <i class="fa-solid fa-heart"></i>
+
+            </div>
+
+            <div>
+
+                <strong>
+                    20K+
+                </strong>
+
+                <span>
+                    Happy Customers
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     OUR STORY
+========================================== -->
+
+<section
+    class="story-section"
+    id="our-story"
+>
+
+    <div class="story-image">
+
+                  <div class="about-video">
                 <video controls>
-                    <source src="./ABOUT_IMG_FOLDER/WhatsApp Video 2025-08-15 at 6.25.29 AM.mp4" type="video/mp4">
+                    <source src="./ABOUT_IMG_FOLDER/0818.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
         </div>
-    </section>
 
-    <!-- Our Crops Section -->
+        <div class="image-badge">
+
+            <i class="fa-solid fa-leaf"></i>
+
+            <span>
+                From Farm
+            </span>
+
+            <strong>
+                To You
+            </strong>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="story-content">
+
+        <span class="section-label">
+            OUR STORY
+        </span>
+
+
+        <h2>
+            Connecting
+            <span>farms</span>
+            with families.
+        </h2>
+
+
+        <p>
+
+            OG Farm was created with a simple idea:
+            make fresh, quality agricultural products
+            easier for everyone to access.
+
+        </p>
+
+
+        <p>
+
+            We work to bring farm produce closer to
+            customers while creating opportunities for
+            local farmers to reach more people.
+
+        </p>
+
+
+        <p>
+
+            From vegetables and fruits to tubers and
+            other farm products, we're building a place
+            where freshness, quality and trust come first.
+
+        </p>
+
+
+        <div class="story-points">
+
+            <div>
+
+                <i class="fa-solid fa-check"></i>
+
+                <span>
+                    Fresh farm produce
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-check"></i>
+
+                <span>
+                    Supporting local farmers
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-check"></i>
+
+                <span>
+                    Quality you can trust
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     MISSION / VISION
+========================================== -->
+
+<section class="mission-section">
+
+    <div class="section-heading">
+
+        <span>
+            WHAT DRIVES US
+        </span>
+
+        <h2>
+            Our Mission & Vision
+        </h2>
+
+        <p>
+            We're building more than a marketplace.
+            We're building a stronger connection between
+            farms and communities.
+        </p>
+
+    </div>
+
+
+
+    <div class="mission-grid">
+
+
+        <!-- MISSION -->
+
+        <div class="mission-card">
+
+            <div class="mission-icon">
+
+                <i class="fa-solid fa-bullseye"></i>
+
+            </div>
+
+            <h3>
+                Our Mission
+            </h3>
+
+            <p>
+
+                To make fresh, quality agricultural
+                products accessible while supporting
+                farmers and encouraging sustainable
+                agriculture.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- VISION -->
+
+        <div class="mission-card featured">
+
+            <div class="mission-icon">
+
+                <i class="fa-solid fa-eye"></i>
+
+            </div>
+
+            <h3>
+                Our Vision
+            </h3>
+
+            <p>
+
+                To become a trusted agricultural
+                marketplace that connects Nigerian
+                farmers with customers across the country.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- VALUES -->
+
+        <div class="mission-card">
+
+            <div class="mission-icon">
+
+                <i class="fa-solid fa-handshake"></i>
+
+            </div>
+
+            <h3>
+                Our Values
+            </h3>
+
+            <p>
+
+                Freshness, honesty, quality and
+                community guide everything we do.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+  <!-- Our Crops Section -->
     <section id="crops-section"></section>
     <section class="crops-section">
       <h2>🌾 Our Crops</h2>
@@ -202,209 +713,103 @@
     </div>
   </section>
 
-  
-  
- 
-
-  <section id="seeds-section"></section>
-  <div class="seeds-section">
-    <h2>Our Quality Seeds</h2>
-    <p>We provide high-quality seeds to ensure healthy and productive farming.</p>
-  
-    <div class="seeds-container">
-      <!-- Seed Card 1 -->
-      <div class="seed-card">
-        <img src="./ABOUT_IMG_FOLDER/corn-maize.jpg" alt="Sweet Corn Seed">
-        <h3>Sweet Corn Seeds</h3>
-        <p>High-yield hybrid maize seeds suitable for all soil types.</p>
-        <div class="surprise-indicator">
-          <span class="indicator-dot">✦</span>
-          <div class="surprise-popup">
-            <span class="surprise-emoji">🌱</span>
-            <p>Surprise! These seeds germinate in just 7-10 days!</p>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Seed Card 2 -->
-      <div class="seed-card">
-        <img src="./ABOUT_IMG_FOLDER/plantain.jpg" alt="Plantain Suckers">
-        <h3>Plantain Suckers</h3>
-        <p>Improved plantain varieties with excellent pest resistance.</p>
-        <div class="surprise-indicator">
-          <span class="indicator-dot">✦</span>
-          <div class="surprise-popup">
-            <span class="surprise-emoji">🌿</span>
-            <p>Fun fact: Plantain suckers can produce fruit in 9 months!</p>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Seed Card 3 -->
-      <div class="seed-card">
-        <img src="./ABOUT_IMG_FOLDER/pineapple-plant.jpg" alt="Pineapple Crowns">
-        <h3>Pineapple Crowns</h3>
-        <p>Fresh pineapple crowns for nutritious farming production.</p>
-        <div class="surprise-indicator">
-          <span class="indicator-dot">✦</span>
-          <div class="surprise-popup">
-            <span class="surprise-emoji">🍍</span>
-            <p>Surprise! Pineapple crowns regrow into new plants!</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="seed-card">
-        <img src="./ABOUT_IMG_FOLDER/white-yam.jpg" alt="Water-yam seedlings">
-        <h3>Water-yam</h3>
-        <p>High-quality yam seedlings for bountiful harvests.</p>
-        <div class="surprise-indicator">
-          <span class="indicator-dot">✦</span>
-          <div class="surprise-popup">
-            <span class="surprise-emoji">🌾</span>
-            <p>Did you know? Yam seedlings can yield up to 20 tubers each!</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <section id="Vision"></section>
-
-  <section class="vision-section">
-    <div class="vision-header">
-      <h5>OUR VISION & MISSION</h5>
-      <h2>Growing a Sustainable Future</h2>
-      <p>Committed to feeding communities with fresh, organic produce while nurturing the environment for generations to come.</p>
-    </div>
-
-    <div class="vision-grid">
-      <div class="vision-card vision">
-        <div class="vision-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8m4.59-12.42L11 13.17l-2.59-2.58L7 12l4 4l7-7z"/></svg>
-        </div>
-        <h3>Our Vision</h3>
-        <p>To become Nigeria's leading organic farm, recognized for sustainable agriculture, quality produce, and community empowerment — feeding families with healthy, chemical-free food.</p>
-      </div>
-
-      <div class="vision-card mission">
-        <div class="vision-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8m4.59-12.42L11 13.17l-2.59-2.58L7 12l4 4l7-7z"/></svg>
-        </div>
-        <h3>Our Mission</h3>
-        <p>To combine modern farming techniques with traditional knowledge, ensuring every harvest is abundant, healthy, and sustainable — from our organic fields to your family's table.</p>
-      </div>
-      <div class="vision-card values">
-        <div class="vision-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8m4.59-12.42L11 13.17l-2.59-2.58L7 12l4 4l7-7z"/></svg>
-        </div>
-        <h3>Our Values</h3>
-        <p>Quality, sustainability, and trust guide everything we do. We prioritize eco-friendly practices, animal welfare, and the health of every family we serve.</p>
-      </div>
-    </div>
-
-    <section id="Vision">
-    <div class="vision-stats">
-      <div class="stat-item">
-        <span class="stat-number">8+</span>
-        <span class="stat-label">Acres of Farmland</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">100%</span>
-        <span class="stat-label">Organic Produce</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">4+</span>
-        <span class="stat-label">Livestock Types</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">1000+</span>
-        <span class="stat-label">Happy Families</span>
-      </div>
-    </div>
-  </section>
-</section>
-
-  <footer class="og-footer">
-    <div class="footer-container">
-
-        <!-- Brand -->
-        <div class="footer-brand">
-            <div class="footer-logo">
-                <span>🌱</span> OG Farm
-            </div>
-
-            <p>
-                Fresh from the farm, straight to your table.
-                Quality agricultural products you can trust.
-            </p>
-
-            <div class="social-icons">
-                <a href="#" aria-label="Facebook">f</a>
-                <a href="#" aria-label="Instagram">◎</a>
-                <a href="#" aria-label="Twitter">𝕏</a>
-                <a href="#" aria-label="WhatsApp">◉</a>
-            </div>
-        </div>
 
 
-        <!-- Quick Links -->
-        <div class="footer-column">
-            <h3>Quick Links</h3>
-
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="about.html">About Us</a>
-            <a href="reviews.html">Reviews</a>
-            <a href="contact.html">Contact</a>
-        </div>
 
 
-        <!-- Customer Care -->
-        <div class="footer-column">
-            <h3>Customer Care</h3>
 
-            <a href="#">FAQs</a>
-            <a href="#">Delivery Information</a>
-            <a href="#">Make an Inquiry</a>
-            <a href="#">Leave a Review</a>
-            <a href="#">Help Center</a>
-        </div>
+<!-- ==========================================
+     CTA
+========================================== -->
 
+<section class="about-cta">
 
-        <!-- Contact -->
-        <div class="footer-column contact-column">
-            <h3>Get In Touch</h3>
+    <div>
 
-            <p>📍 Lagos, Nigeria</p>
-            <p>📞 +234 808 414 2624</p>
-            <p>✉️ ogfarms@Vnicom.com</p>
+        <span>
+            🌾 READY TO SHOP?
+        </span>
 
-            <div class="footer-badge">
-                🌾 Fresh • Local • Trusted
-            </div>
-        </div>
-
-    </div>
-
-
-    <!-- Bottom -->
-    <div class="footer-bottom">
+        <h2>
+            Bring the farm
+            <strong>home.</strong>
+        </h2>
 
         <p>
-            © 2026 <strong>OG Farm</strong>. All rights reserved.
+            Explore our fresh selection of farm products.
         </p>
 
-        <div class="legal-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
+
+        <a
+            href="product.html"
+            class="cta-btn"
+        >
+
+            Explore Products
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <h3>
+                OG<span>Farm</span>
+            </h3>
+
+            <p>
+                Fresh from the farm, straight to you. 🌱
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="product.html">
+                Shop
+            </a>
+
+            <a href="About.html">
+                About
+            </a>
+
+            <a href="Review.html">
+                Reviews
+            </a>
+
         </div>
 
     </div>
-  </footer>
 
 
+    <div class="footer-bottom">
+
+        © 2026 OG Farm. All rights reserved.
+
+    </div>
+
+</footer>
+</body>
+</html>
 <script src="about.js"></script>
 </body>
 </html>

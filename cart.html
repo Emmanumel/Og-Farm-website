@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OG Farm | Your Cart</title>
+
+    <link rel="stylesheet" href="cart.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+       <header class="product-header">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+
+        <div class="help-center">
+            <i class="fa-solid fa-phone"></i>
+            <span>Help Center: +234 808 414 2624</span>
+        </div>
+
+        <div class="top-right">
+
+            <div class="location-select">
+         
+               
+                <div class="country-select">
+
+    <img id="countryFlag" src="https://flagcdn.com/w40/ng.png" alt="Nigeria">
+
+    <select id="country">
+
+        <option value="ng">Nigeria</option>
+        <option value="gh">Ghana</option>
+        <option value="ke">Kenya</option>
+        <option value="za">South Africa</option>
+        <option value="eg">Egypt</option>
+        <option value="ma">Morocco</option>
+        <option value="tz">Tanzania</option>
+        <option value="ug">Uganda</option>
+        <option value="rw">Rwanda</option>
+        <option value="cm">Cameroon</option>
+
+    </select>
+
+</div>
+          
+            </div>
+
+            <a href="#">Login</a>
+
+            <a href="#">Sign Up</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Main Header -->
+    <div class="main-header">
+
+        <div class="logo">
+            <a href="index.html">OG<span>Farm</span></a>
+        </div>
+
+
+        <div class="search-box">
+
+            <input
+                type="search"
+                placeholder="Search fruits, vegetables, seeds..."
+            >
+
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+<div class="delivery">
+
+    <i class="fa-solid fa-location-dot"></i>
+
+    <div class="delivery-select">
+
+        <small>Deliver to</small>
+
+        <div class="location-dropdowns">
+
+            <select id="stateSelect">
+                <option selected disabled>Select State</option>
+            </select>
+
+            <select id="lgaSelect">
+                <option selected disabled>Select LGA</option>
+            </select>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+        <div class="header-icons">
+
+            <a href="cart.html" class="cart-link">
+
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    <span class="cart-count" id="cartCount">0</span>
+
+</a>
+
+            </a>
+
+            <a href="#" class="account">
+                <i class="fa-solid fa-user"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="./About.html"  class="active">Home</a>
+        <a href="./About.html">About</a>
+        <a href="./product.html">Products</a>
+        <a href="./cart.html">My Cart</a>
+        <a href="./checkout.html">Checkout</a>
+        <a href="./Reviews.html">Reviews</a>
+
+    </nav>
+
+</header>
+
+ 
+
+
+
+    <section class="cart-box">
+
+    <!-- Products will be inserted here by JavaScript -->
+    <div id="cartItems"></div>
+
+    <!-- Empty Cart -->
+    <div class="empty-cart" id="emptyCart">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <h2>Your cart is empty</h2>
+
+        <p>
+            Looks like you haven't added anything to your cart yet.
+        </p>
+
+        <a href="product.html" class="continue-shopping">
+            <i class="fa-solid fa-basket-shopping"></i>
+            Continue Shopping
+        </a>
+
+    </div>
+
+
+    <!-- Cart Bottom -->
+    <div class="cart-bottom" id="cartBottom">
+
+        <div class="subtotal">
+
+            <p>
+                Subtotal
+                (<span id="itemCount">0</span> items)
+            </p>
+
+            <h2 id="subtotal">₦0.00</h2>
+
+        </div>
+
+        <div class="cart-buttons">
+
+            <button id="clearCart" class="clear-btn">
+                <i class="fa-solid fa-circle-xmark"></i>
+                Clear Cart
+            </button>
+
+            <button id="paymentBtn" class="payment-btn">
+                <i class="fa-solid fa-credit-card"> 
+                </i>
+                Proceed to Payment
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="cart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OG Farm | Checkout</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Checkout CSS -->
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+
+       <header class="product-header">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+
+        <div class="help-center">
+            <i class="fa-solid fa-phone"></i>
+            <span>Help Center: +234 808 414 2624</span>
+        </div>
+
+        <div class="top-right">
+
+            <div class="location-select">
+         
+               
+                <div class="country-select">
+
+    <img id="countryFlag" src="https://flagcdn.com/w40/ng.png" alt="Nigeria">
+
+    <select id="country">
+
+        <option value="ng">Nigeria</option>
+        <option value="gh">Ghana</option>
+        <option value="ke">Kenya</option>
+        <option value="za">South Africa</option>
+        <option value="eg">Egypt</option>
+        <option value="ma">Morocco</option>
+        <option value="tz">Tanzania</option>
+        <option value="ug">Uganda</option>
+        <option value="rw">Rwanda</option>
+        <option value="cm">Cameroon</option>
+
+    </select>
+
+</div>
+          
+            </div>
+
+            <a href="#">Login</a>
+
+            <a href="#">Sign Up</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Main Header -->
+    <div class="main-header">
+
+        <div class="logo">
+            <a href="index.html">OG<span>Farm</span></a>
+        </div>
+
+
+        <div class="search-box">
+
+            <input
+                type="search"
+                placeholder="Search fruits, vegetables, seeds..."
+            >
+
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+<div class="delivery">
+
+    <i class="fa-solid fa-location-dot"></i>
+
+    <div class="delivery-select">
+
+        <small>Deliver to</small>
+
+        <div class="location-dropdowns">
+
+            <select id="stateSelect">
+                <option selected disabled>Select State</option>
+            </select>
+
+            <select id="lgaSelect">
+                <option selected disabled>Select LGA</option>
+            </select>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+        <div class="header-icons">
+
+            <a href="cart.html" class="cart-link">
+
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    <span class="cart-count" id="cartCount">0</span>
+
+</a>
+
+            </a>
+
+            <a href="#" class="account">
+                <i class="fa-solid fa-user"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="./About.html"  class="active">Home</a>
+        <a href="./About.html">About</a>
+        <a href="./product.html">Products</a>
+        <a href="./cart.html">My Cart</a>
+        <a href="./checkout.html">Checkout</a>
+        <a href="./Reviews.html">Reviews</a>
+
+    </nav>
+
+</header>
+
+
+
+
+    <!-- ==============================
+         CHECKOUT CONTAINER
+    =============================== -->
+
+    <main class="checkout-container">
+
+        <div class="page-title">
+
+            <span class="title-icon">
+                <i class="fa-solid fa-leaf"></i>
+            </span>
+
+            <div>
+                <h1>Checkout</h1>
+                <p>Complete your order with OG Farm.</p>
+            </div>
+
+        </div>
+
+
+
+        <div class="checkout-layout">
+
+
+            <!-- ==============================
+                 CUSTOMER FORM
+            =============================== -->
+
+            <section class="checkout-card">
+
+                <h2>
+                    <i class="fa-solid fa-user"></i>
+                    Customer Information
+                </h2>
+
+
+                <form
+                    action="https://formspree.io/f/xzepkkjk"
+                    method="POST"
+                    id="checkoutForm"
+                >
+
+                    <!-- NAME -->
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="08012345678"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- ADDRESS -->
+
+                    <div class="form-group">
+
+                        <label for="address">
+                            Delivery Address
+                        </label>
+
+                        <textarea
+                            id="address"
+                            name="address"
+                            placeholder="Enter your complete delivery address"
+                            required
+                        ></textarea>
+
+                        <!-- DELIVERY LOCATION -->
+
+
+<div class="form-group">
+
+    <label for="state">
+        <i class="fa-solid fa-map-location-dot"></i>
+        State
+    </label>
+
+    <select id="state" name="state" required>
+        <option value="" disabled selected>
+            Select your state
+        </option>
+
+        <option value="Lagos">Lagos</option>
+        <option value="Ogun">Ogun</option>
+        <option value="Oyo">Oyo</option>
+        <option value="Osun">Osun</option>
+        <option value="Ondo">Ondo</option>
+        <option value="Ekiti">Ekiti</option>
+    </select>
+
+</div>
+
+
+<div class="form-group">
+
+    <label for="lga">
+        <i class="fa-solid fa-location-dot"></i>
+        Local Government Area
+    </label>
+
+    <select id="lga" name="lga" required disabled>
+        <option value="">
+            Select your LGA
+        </option>
+    </select>
+
+</div>
+
+                    </div>
+
+
+
+                    <!-- ADDITIONAL MESSAGE -->
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Additional Information
+                            <span>(Optional)</span>
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Any additional instructions?"
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <!-- HIDDEN ORDER DETAILS -->
+
+                    <textarea
+                        name="order"
+                        id="orderDetails"
+                        hidden
+                    ></textarea>
+
+
+
+                    <!-- HIDDEN TOTAL -->
+
+                    <input
+                        type="hidden"
+                        name="total"
+                        id="orderTotal"
+                    >
+
+
+
+                    <!-- EMAIL SUBJECT -->
+
+                    <input
+                        type="hidden"
+                        name="subject"
+                        value="New OG Farm Order"
+                    >
+
+
+
+                    <!-- SUBMIT -->
+
+                    <button
+                        type="submit"
+                        class="place-order-btn"
+                    >
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Place Order
+
+                    </button>
+
+                </form>
+
+            </section>
+
+
+
+            <!-- ==============================
+                 ORDER SUMMARY
+            =============================== -->
+
+            <aside class="order-summary">
+
+                <div class="summary-header">
+
+                    <h2>
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        Your Order
+                    </h2>
+
+                    <span id="itemCount">
+                        0 items
+                    </span>
+
+                </div>
+
+
+
+                <!-- PRODUCTS WILL APPEAR HERE -->
+
+                <div
+                    class="checkout-products"
+                    id="checkoutProducts"
+                >
+                </div>
+
+
+
+                <!-- TOTAL -->
+
+                <div class="summary-total">
+
+                    <span>Total</span>
+
+                    <strong id="checkoutTotal">
+                        ₦0
+                    </strong>
+
+                </div>
+
+
+
+                <!-- SECURITY MESSAGE -->
+
+                <div class="secure-message">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <div>
+
+                        <strong>Secure Checkout</strong>
+
+                        <p>
+                            Your information is securely submitted.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ==============================
+         JAVASCRIPT
+    =============================== -->
+
+    <script src="checkout.js"></script>
+
+</body>
+
+</html>

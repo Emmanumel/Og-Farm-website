@@ -1,154 +1,614 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leave a Review!</title>
-    <link rel="stylesheet" href="Review.css">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>OG Farm | Leave a Review</title>
+
+    <link
+        rel="stylesheet"
+        href="Review.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
 </head>
 <body>
-<header>
-    <div class="logo-container"><img src="./ABOUT_IMG_FOLDER/Logo copy.png" alt="Logo-img"></div>
 
-    <div class="navbar">
-        <div class="navlinks">
-            <a href="/index.html">Home</a>
-            <a href="/About.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="/product.html">Inquiry</a>
+       <header class="product-header">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+
+        <div class="help-center">
+            <i class="fa-solid fa-phone"></i>
+            <span>Help Center: +234 808 414 2624</span>
         </div>
-    </div>
-    <div class="ICONS">
-        <div class="icon-container"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
-	<path d="M0 0h24v24H0z" fill="none" />
-	<path fill="currentColor" d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14" />
-</svg>
+
+        <div class="top-right">
+
+            <div class="location-select">
+         
+               
+                <div class="country-select">
+
+    <img id="countryFlag" src="https://flagcdn.com/w40/ng.png" alt="Nigeria">
+
+    <select id="country">
+
+        <option value="ng">Nigeria</option>
+        <option value="gh">Ghana</option>
+        <option value="ke">Kenya</option>
+        <option value="za">South Africa</option>
+        <option value="eg">Egypt</option>
+        <option value="ma">Morocco</option>
+        <option value="tz">Tanzania</option>
+        <option value="ug">Uganda</option>
+        <option value="rw">Rwanda</option>
+        <option value="cm">Cameroon</option>
+
+    </select>
+
 </div>
-    <div class="icon-container">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
-	<path d="M0 0h24v24H0z" fill="none" />
-	<path fill="currentColor" d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25q0-.075.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2" />
-</svg>
+          
+            </div>
+
+            <a href="#">Login</a>
+
+            <a href="#">Sign Up</a>
+
+        </div>
+
     </div>
 
-    <div class="icon-container">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
-	<path d="M0 0h24v24H0z" fill="none" />
-	<path fill="currentColor" d="M9.175 10.825Q8 9.65 8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12t-2.825-1.175M4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2V20z" />
-</svg>
+
+    <!-- Main Header -->
+    <div class="main-header">
+
+        <div class="logo">
+            <a href="index.html">OG<span>Farm</span></a>
+        </div>
+
+
+        <div class="search-box">
+
+            <input
+                type="search"
+                placeholder="Search fruits, vegetables, seeds..."
+            >
+
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+<div class="delivery">
+
+    <i class="fa-solid fa-location-dot"></i>
+
+    <div class="delivery-select">
+
+        <small>Deliver to</small>
+
+        <div class="location-dropdowns">
+
+            <select id="stateSelect">
+                <option selected disabled>Select State</option>
+            </select>
+
+            <select id="lgaSelect">
+                <option selected disabled>Select LGA</option>
+            </select>
+
+        </div>
+
     </div>
+
+</div>
+
+
+        <div class="header-icons">
+
+            <a href="cart.html" class="cart-link">
+
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    <span class="cart-count" id="cartCount">0</span>
+
+</a>
+
+            </a>
+
+            <a href="#" class="account">
+                <i class="fa-solid fa-user"></i>
+            </a>
+
+        </div>
+
     </div>
+
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="./About.html">Home</a>
+        <a href="./About.html">About</a>
+        <a href="./product.html">Products</a>
+        <a href="./cart.html">My Cart</a>
+        <a href="./checkout.html">Checkout</a>
+        <a href="./Reviews.html" class="active">Reviews</a>
+
+    </nav>
+
 </header>
 
+<section class="review-hero">
 
+    <div class="hero-content">
 
+        <span class="hero-tag">
+            🌱 Your opinion matters
+        </span>
 
-<div class="banner-section">
-    <h1>Customer's <span>Review</span></h1>
-</div>
+        <h1>
+            Share Your
+            <span>Experience</span>
+        </h1>
 
-
-<div class="card-container">
-    <div class="card">
-        <div class="profile">
-            <img src="./images-folder/casual-young-african-man-smiling-isolated-white.jpg" alt="">
-            <p>"I ordered fresh vegetables from OG Farm, and I was honestly impressed. Everything arrived fresh, clean, and exactly as advertised. The customer service was also very responsive. I'll definitely be ordering again!"</p>
-            <div class="names">
-                <h3>Micheal A.</h3> <br>
-                <span>⭐⭐⭐⭐⭐</span>
-            </div>
-        </div>
-    </div>
-      <div class="card">
-        <div class="profile">
-            <img src="./images-folder/african-teenage-girl-portrait-happy-smiling-face.jpg" alt="">
-            <p>"OG Farm has become my go-to place for fresh farm produce. The quality is excellent, the prices are fair, and delivery was faster than I expected. I highly recommend them to anyone looking for healthy, fresh food."</p>
-            <div class="names">
-                <h3>Sarah O.</h3> <br>
-                <span>⭐⭐⭐⭐⭐</span>
-            </div>
-        </div>
+        <p>
+            Tell us how your experience with OG Farm was.
+            Your feedback helps us grow and serve you better.
+        </p>
 
     </div>
-      <div class="card">
-        <div class="profile">
-            <img src="./images-folder/confident-business-woman-portrait-smiling-face (1).jpg" alt="">
-            <p>"I had a few questions before placing my order, and the team answered every one of them professionally. The products were fresh and well-packaged, and you can tell they care about quality. Great experience overall!"</p>
-        <div class="names">
-                <h3>Daniel K.</h3> <br>
-                <span>⭐⭐⭐⭐⭐</span>
-            </div>
-        </div>
-        
-    </div>
-</div>
-
-<label for="review">Share your experience</label>
-
-<textarea
-    id="review"
-    placeholder="Tell us what you loved about OG Farm... 🌱"
-    maxlength="500"
-></textarea>
-
-<div class="review-info">
-    <span>Be honest—we value every opinion.</span>
-    <span id="charCount">0/500</span>
-</div>
-  <input type="radio" name="rating" id="star5" value="5">
-  <label for="star5">&#9733;</label>
-
-  <input type="radio" name="rating" id="star4" value="4">
-  <label for="star4">&#9733;</label>
-
-  <input type="radio" name="rating" id="star3" value="3">
-  <label for="star3">&#9733;</label>
-
-  <input type="radio" name="rating" id="star2" value="2">
-  <label for="star2">&#9733;</label>
-
-  <input type="radio" name="rating" id="star1" value="1">
-  <label for="star1">&#9733;</label>
-</div>
-
-<div class="rating-area">
-<p>Your Rating: <span id="ratingValue">0</span>/5</p>
-
-<div class="feedback">
-
-    <div id="feedbackEmoji" class="emoji">
-        😊
-    </div>
-
-    <p id="feedbackText">
-        Select a rating above.
-    </p>
-
-</div>
-
-
-
-
-        <textarea
-            id="review"
-            rows="6"
-            placeholder="Tell us about your experience with at OGFarm..."
-            required
-        ></textarea>
-
-        <div class="btn">    
-            <button type="submit">
-            Submit Review
-        </button>
-    </div>
-    
-</div>
-    </form>
 
 </section>
-    
-    
-    <script src="Review.js"></script>
+
+
+
+<!-- ==========================================
+     PREVIOUS REVIEWS
+========================================== -->
+
+<section class="customer-reviews">
+
+    <div class="section-heading">
+
+        <span>WHAT OUR CUSTOMERS SAY</span>
+
+        <h2>
+            Loved by our
+            <strong>community</strong>
+        </h2>
+
+    </div>
+
+
+    <div class="review-cards">
+
+
+        <!-- CARD 1 -->
+
+        <article class="review-card">
+
+            <div class="review-profile">
+
+                <img
+                    src="./meprofile.jpeg"
+                    alt="Olusina"
+                >
+
+                <div>
+
+                    <h3>
+                        Oluwasina O.
+                    </h3>
+
+                    <span>
+                        ⭐⭐⭐⭐⭐
+                    </span>
+
+                </div>
+
+            </div>
+
+            <p>
+                "Great quality produce and everything arrived fresh.
+                I'll definitely be shopping again."
+            </p>
+
+        </article>
+
+
+
+        <!-- CARD 2 -->
+
+        <article class="review-card">
+
+            <div class="review-profile">
+
+                <img
+                    src="./WhatsApp Image 2026-08-19 at 1.17.08 PM.jpeg"
+                    alt="Precious"
+                >
+
+                <div>
+
+                    <h3>
+                        Precious O.
+                    </h3>
+
+                    <span>
+                        ⭐⭐⭐⭐⭐
+                    </span>
+
+                </div>
+
+            </div>
+
+            <p>
+                "I haven't bought many foodstuffs in a long time.
+                Thanks to OG Farm!"
+            </p>
+
+        </article>
+
+
+
+        <!-- CARD 3 -->
+
+        <article class="review-card">
+
+            <div class="review-profile">
+
+                <img
+                    src="./meprofile2.jpeg"
+                    alt="Emmanuel"
+                >
+
+                <div>
+
+                    <h3>
+                        Emmanuel O.
+                    </h3>
+
+                    <span>
+                        ⭐⭐⭐⭐⭐
+                    </span>
+
+                </div>
+
+            </div>
+
+            <p>
+                "I enjoyed the whole farm experience, from planting
+                the seeds to harvesting nutritious food."
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     REVIEW FORM
+========================================== -->
+
+<section class="review-section">
+
+
+    <div class="review-form-container">
+
+
+        <div class="form-heading">
+
+            <span class="form-icon">
+                💬
+            </span>
+
+            <h2>
+                Leave a Review
+            </h2>
+
+            <p>
+                We'd love to hear what you think about OG Farm.
+            </p>
+
+        </div>
+
+
+
+        <!-- ==================================
+             FORMSPREE FORM
+        =================================== -->
+
+        <form
+            action="https://formspree.io/f/xzepkkjk"
+            method="POST"
+            id="reviewForm"
+        >
+
+
+            <!-- NAME + EMAIL -->
+
+            <div class="form-row">
+
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Your Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RATING -->
+
+            <div class="rating-section">
+
+                <label>
+                    How would you rate OG Farm?
+                </label>
+
+
+                <div class="emoji" id="feedbackEmoji">
+                    😊
+                </div>
+
+
+                <p
+                    class="feedback-text"
+                    id="feedbackText"
+                >
+                    Select a rating below
+                </p>
+
+
+                <div class="rating">
+
+                    <input
+                        type="radio"
+                        name="rating"
+                        id="star5"
+                        value="5"
+                    >
+
+                    <label
+                        for="star5"
+                        title="Excellent"
+                    >
+                        ★
+                    </label>
+
+
+                    <input
+                        type="radio"
+                        name="rating"
+                        id="star4"
+                        value="4"
+                    >
+
+                    <label
+                        for="star4"
+                        title="Very Good"
+                    >
+                        ★
+                    </label>
+
+
+                    <input
+                        type="radio"
+                        name="rating"
+                        id="star3"
+                        value="3"
+                    >
+
+                    <label
+                        for="star3"
+                        title="Good"
+                    >
+                        ★
+                    </label>
+
+
+                    <input
+                        type="radio"
+                        name="rating"
+                        id="star2"
+                        value="2"
+                    >
+
+                    <label
+                        for="star2"
+                        title="Fair"
+                    >
+                        ★
+                    </label>
+
+
+                    <input
+                        type="radio"
+                        name="rating"
+                        id="star1"
+                        value="1"
+                    >
+
+                    <label
+                        for="star1"
+                        title="Poor"
+                    >
+                        ★
+                    </label>
+
+                </div>
+
+
+                <p class="rating-value">
+
+                    Your Rating:
+                    <strong id="ratingValue">
+                        0
+                    </strong>/5
+
+                </p>
+
+            </div>
+
+
+
+            <!-- REVIEW -->
+
+            <div class="form-group">
+
+                <label for="review">
+                    Share your experience
+                </label>
+
+                <textarea
+                    id="review"
+                    name="review"
+                    maxlength="500"
+                    placeholder="Tell us what you loved about OG Farm... 🌱"
+                    required
+                ></textarea>
+
+
+                <div class="review-info">
+
+                    <span>
+                        Be honest — we value every opinion.
+                    </span>
+
+                    <span id="charCount">
+                        0/500
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- HIDDEN INFORMATION -->
+
+            <input
+                type="hidden"
+                name="_subject"
+                value="🌱 New OG Farm Customer Review"
+            >
+
+
+            <input
+                type="hidden"
+                name="feedback"
+                id="feedbackHidden"
+            >
+
+
+            <!-- SUBMIT -->
+
+            <button
+                type="submit"
+                class="submit-btn"
+                id="submitBtn"
+            >
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+                Submit Review
+
+            </button>
+
+
+            <!-- SUCCESS -->
+
+            <div
+                class="success-message"
+                id="successMessage"
+            >
+
+                <span>
+                    🎉
+                </span>
+
+                <div>
+
+                    <strong>
+                        Thank you!
+                    </strong>
+
+                    <p>
+                        Your review has been sent successfully.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+    <p>
+        © 2026 OG Farm. Fresh from the farm, straight to you. 🌱
+    </p>
+
+</footer>
+
+
+
+<script src="Review.js"></script>
+
 </body>
+
 </html>
