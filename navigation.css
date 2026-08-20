@@ -80,7 +80,7 @@ body :not(i) {
 .product-header .header-icons { gap: .9rem; }
 .product-header .header-icons a { position: relative; color: #245b2a; font-size: 1.2rem; transition: color .2s ease; }
 .product-header .header-icons a:hover,
-.product-header .header-icons a.active { color: white; transform: translateY(-1px); }
+.product-header .header-icons a.active { color: #666; transform: none; }
 .product-header .cart-count { position: absolute; top: -.55rem; right: -.7rem; min-width: 1.15rem; padding: .05rem .25rem; border-radius: 99px; background: #7caf3a; color: #fff; font-size: .67rem; line-height: 1.05rem; text-align: center; }
 .product-header .navbar {
     position: relative;
