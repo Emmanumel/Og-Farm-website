@@ -52,7 +52,7 @@ body :not(i) {
 
 .product-header .top-right { gap: 1rem; }
 .product-header .top-right a { color: #fff; text-decoration: none; font-weight: 600; }
-.product-header .top-right a:hover { color: #d7f5d8; }
+.product-header .top-right a:hover { background-color: #d7f5d8; }
 .product-header .location-select { display: none !important; }
 .product-header .help-center {
     gap: .45rem;
@@ -80,7 +80,7 @@ body :not(i) {
 .product-header .header-icons { gap: .9rem; }
 .product-header .header-icons a { position: relative; color: #245b2a; font-size: 1.2rem; transition: color .2s ease; }
 .product-header .header-icons a:hover,
-.product-header .header-icons a.active { color: #2e7d32; transform: translateY(-1px); }
+.product-header .header-icons a.active { color: white; transform: translateY(-1px); }
 .product-header .cart-count { position: absolute; top: -.55rem; right: -.7rem; min-width: 1.15rem; padding: .05rem .25rem; border-radius: 99px; background: #7caf3a; color: #fff; font-size: .67rem; line-height: 1.05rem; text-align: center; }
 .product-header .navbar {
     position: relative;
@@ -157,7 +157,7 @@ body :not(i) {
         flex-direction: column;
         align-items: stretch;
         gap: 0;
-        background:#1f6725;
+        background:white;
         border-top: 1px solid #e5eee5;
         border-bottom: 1px solid #e5eee5;
         box-shadow: 0 12px 20px rgba(31, 91, 43, .12);
