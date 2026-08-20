@@ -80,7 +80,7 @@ body :not(i) {
 .product-header .location-dropdowns { display: flex; gap: .35rem; }
 .product-header .location-dropdowns select { max-width: 105px; border: 0; background: transparent; color: #3f4a42; font-size: .76rem; }
 .product-header .header-icons { gap: .9rem; }
-.product-header .header-icons a { position: relative; color: #245b2a; font-size: 1.2rem; transition: color .2s ease, transform .2s ease; }
+.product-header .header-icons a { position: relative; color: #245b2a; font-size: 1.2rem; transition: color .2s ease; }
 .product-header .header-icons a:hover,
 .product-header .header-icons a.active { color: #2e7d32; transform: translateY(-1px); }
 .product-header .cart-count { position: absolute; top: -.55rem; right: -.7rem; min-width: 1.15rem; padding: .05rem .25rem; border-radius: 99px; background: #7caf3a; color: #fff; font-size: .67rem; line-height: 1.05rem; text-align: center; }
@@ -135,9 +135,8 @@ body :not(i) {
     font-size: 1.5rem;
     padding: .5rem;
     color: #2E7D32;
-    transition: transform .3s ease;
 }
-.nav-toggle:hover { transform: rotate(90deg); }
+.nav-toggle:hover { cursor: pointer; }
 
 @media (max-width: 768px) {
     .product-header .top-bar { flex-wrap: wrap; gap: .35rem .75rem; padding: .35rem 4%; }
