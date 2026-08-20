@@ -345,13 +345,6 @@
     padding:15px 5%;
 }
 
-.product-filters{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
 
 
 
@@ -694,12 +687,11 @@
         RESPONSIVE
 =========================*/
 
-@media(max-width:1000px){
+@media(max-width:768px){
 
 .hero{
 
     flex-direction:column;
-
     text-align:center;
 
 }
@@ -727,6 +719,10 @@
 .product-preview{
     position:relative;
     right: 60px;
+    align-self: center;
+    justify-content:center;
+    margin-left: 20px;
+   
     
 
 }

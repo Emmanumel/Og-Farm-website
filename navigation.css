@@ -36,10 +36,10 @@ body :not(i) {
     justify-content: space-between;
     min-height: 44px;
     padding: .5rem 5%;
-    background: #f5fff4;
+   
     border-bottom: 1px solid #e8e8e8;
     font-size: .9rem;
-    color: #2E7D32;
+    background-color: #2E7D32;
 }
 
 .product-header .help-center,
