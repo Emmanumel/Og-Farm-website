@@ -74,7 +74,6 @@ html {
     z-index:1000;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.8);
     box-shadow:
     0 10px 35px rgba(31, 91, 43, 0.10),
     inset 0 1px 0 rgba(255, 255, 255, 0.9);
@@ -704,11 +703,10 @@ img {
 
 
 .clear-btn {
-    background: #1f6725;
+    background: #c92330;
 }
 
 .clear-btn:hover {
-    background: #c92330;
     transform: translateY(-2px);
 }
 

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OGFarm - Organic Farm Website in Nigeria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navigation.css">
+</head>
+<body>
+
+    <header class="product-header">
+
+        <!-- Top Bar -->
+        <div class="top-bar">
+
+            <div class="help-center">
+                <i class="fa-solid fa-phone"></i>
+                <span>Help Center: +234 808 414 2624</span>
+            </div>
+
+            <div class="top-right">
+
+                <div class="location-select">
+                    
+                    <div class="country-select">
+    
+                <img id="countryFlag" src="https://flagcdn.com/w40/ng.png" alt="Nigeria">
+
+                <select id="country">
+
+                    <option value="ng">Nigeria</option>
+                    <option value="gh">Ghana</option>
+                    <option value="ke">Kenya</option>
+                    <option value="za">South Africa</option>
+                    <option value="eg">Egypt</option>
+                    <option value="ma">Morocco</option>
+                    <option value="tz">Tanzania</option>
+                    <option value="ug">Uganda</option>
+                    <option value="rw">Rwanda</option>
+                    <option value="cm">Cameroon</option>
+
+                </select>
+
+            </div>
+                  
+                </div>
+
+                <a href="./login.html">Login</a>
+
+                <a href="./register.html">Sign Up</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Main Header -->
+        <div class="main-header">
+
+            <div class="logo">
+                <a href="index.html">OG<span>Farm</span></a>
+            </div>
+
+
+            <div class="search-box">
+
+                <input
+                    type="search"
+                    placeholder="Search fruits, vegetables, seeds..."
+                >
+
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+            </div>
+
+        <div class="delivery">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div class="delivery-select">
+
+                <small>Deliver to</small>
+
+                <div class="location-dropdowns">
+
+                    <select id="stateSelect">
+                        <option selected disabled>Select State</option>
+                    </select>
+
+                    <select id="lgaSelect">
+                        <option selected disabled>Select LGA</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+            <div class="header-icons">
+
+                <a href="cart.html" class="cart-link">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span class="cart-count" id="cartCount">0</span>
+
+        </a>
+
+                <a href="login.html" class="account" aria-label="Log in or manage your account">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+
+            </div>
+
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <!-- Navigation -->
+        <nav class="navbar" aria-label="Primary navigation">
+            <a href="index.html" class="active" aria-current="page">Home</a>
+            <a href="About.html">About</a>
+            <a href="product.html">Products</a>
+            <a href="Reviews.html">Reviews</a>
+        </nav>
+
+    </header>
+
+   
+  <section class="hero">
+    <div class="slider">
+      <div class="slide active" style="background-image: url('images-folder/top-view-vegetable-composition-with-fresh-fruits-blue-table.jpg');"></div>
+      <div class="slide" style="background-image: url('images-folder/fresh-vegetables-fruit-market-stall.jpg');"></div>
+      <div class="slide" style="background-image: url('images-folder/top-view-colorful-arrangement-vegetables.jpg');"></div>
+    </div>
+
+    <button class="arrow left" onclick="prevSlide(); resetAutoSlide()">&#10094;</button>
+    <button class="arrow right" onclick="nextSlide(); resetAutoSlide()">&#10095;</button>
+
+    <div class="hero-content">
+      <h2>Organic Fruits</h2>
+      <h1>Organic Fruits For <br>Better Health</h1>
+      <div class="buttons">
+        <button class="btn explore">Explore</button>
+        <button class="btn contact">Contact</button>
+      </div>
+    </div>
+  </section>
+
+    <section class="farm-section merge-hero">
+    <div class="farm-card veg">
+      <div class="farm-content">
+        <h2>Organic Vegetables</h2>
+        <p>Fresh, chemical-free vegetables grown with care to keep their natural taste, vitamins, and minerals intact. Perfect for a healthy lifestyle straight from the farm to your table.</p>
+        <a href="#">Read More →</a>
+      </div>
+      <div class="farm-image">
+        <img src="./images-folder/bountiful-harvest-fresh-produce-rustic-basket.png" alt="Vegetables">
+      </div>
+    </div>
+  
+    <div class="farm-card fruit">
+      <div class="farm-content">
+        <h2>Organic Fruits</h2>
+        <p>Juicy, naturally sweet fruits cultivated without harmful chemicals. Packed with nutrients and flavor, they're the perfect choice for a refreshing and wholesome diet.</p>
+        <a href="#">Read More →</a>
+      </div>
+      <div class="farm-image">
+        <img src="./images-folder/fruit-basket.png" alt="Fruits">
+      </div>
+    </div>
+    </div>
+    </section>
+
+    <section class="about-section">
+      <!-- Image -->
+      <div class="about-image">
+        <img src="./images-folder/close-up-banana-farmer__1_-removebg-preview (2).png" alt="Farmer with basket">
+      </div>
+  
+      <!-- Content -->
+      <div class="about-content">
+        <h5>ABOUT US</h5>
+        <h2>We Produce Organic Food For Your Family</h2>
+        <p>
+          Fresh, healthy, and chemical-free — grown with care from our farm to your table. Trusted for quality, committed to sustainability, and dedicated to keeping your loved ones nourished.
+        </p>
+  
+        <div class="features">
+          <div class="feature">
+            <span class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="currentColor" d="M23 4.1V2.3l-1.8-.2c-.1 0-.7-.1-1.7-.1c-4.1 0-7.1 1.2-8.8 3.3C9.4 4.5 7.6 4 5.5 4c-1 0-1.7.1-1.7.1l-1.9.3l.1 1.7c.1 3 1.6 8.7 6.8 8.7H9v3.4c-3.8.5-7 1.8-7 1.8v2h20v-2s-3.2-1.3-7-1.8V15c6.3-.1 8-7.2 8-10.9M12 18h-1v-5.6S10.8 9 8 9c0 0 1.5.8 1.9 3.7c-.4.1-.8.1-1.1.1C4.2 12.8 4 6.1 4 6.1S4.6 6 5.5 6c1.9 0 5 .4 5.9 3.1C11.9 4.6 17 4 19.5 4c.9 0 1.5.1 1.5.1s0 9-6.3 9H14c0-2 2-5 2-5c-3 1-3 4.9-3 4.9v5z"/></svg></span>
+            <div>
+              <h4>100% Organic</h4>
+              <p>Providing high-quality, eco-friendly farm produce that supports healthy living and sustainability.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 32 32"><path fill="currentColor" d="M16 3c-.625 0-1.246.21-1.781.594L12.563 4.75L10.655 5h-.031l-.031.031A3.39 3.39 0 0 0 8.03 7.594L8 7.625v.031l-.25 1.938l-1.156 1.5l-.032.031v.031c-.699 1.117-.73 2.559.032 3.625l1.187 1.656l.313 1.72l-3.219 4.905l-1.031 1.532h4.781l1.156 2.687L10.5 29l1.031-1.563l3.156-4.75c.848.348 1.805.38 2.626 0l3.156 4.75L21.5 29l.719-1.719l1.156-2.687h4.781l-1.031-1.532L24 18.313l.25-1.875l1.156-1.656l.032-.031v-.031c.699-1.117.73-2.528-.032-3.594L24.25 9.469l-.375-1.875h.031c-.004-.024-.027-.04-.031-.063c-.18-1.308-1.215-2.37-2.531-2.531h-.032l-1.875-.25l-1.656-1.156A3.07 3.07 0 0 0 16 3m0 2.031c.23 0 .457.07.625.188L18.406 6.5l.219.156l.25.032L21.063 7h.03c.45.05.762.363.813.813v.062l.407 2.219l.03.219l.157.187l1.281 1.781c.239.332.27.895-.031 1.375l-1.406 1.969l-.032.25L22 18.063v.03a1 1 0 0 1-.156.438l-.063.032v.03a.88.88 0 0 1-.593.313h-.063l-2.281.407l-.25.03l-.188.157l-1.781 1.281c-.332.239-.926.27-1.406-.031l-1.625-1.25l-.188-.156l-.281-.032L10.937 19h-.03a.89.89 0 0 1-.688-.438a1 1 0 0 1-.125-.375v-.062l-.406-2.281l-.032-.25l-.156-.188l-1.281-1.781c-.239-.332-.27-.926.031-1.406l1.25-1.625l.156-.188l.031-.281l.282-2.094c.004-.015.027-.015.031-.031a1.4 1.4 0 0 1 1-1c.016-.004.016-.027.031-.031l2.094-.282l.25-.03l.219-.157l1.781-1.281c.168-.117.395-.188.625-.188m6.906 15.219l1.532 2.344H22.03l-.25.625l-.687 1.593l-2.125-3.25l.468-.343l1.97-.344v.031c.023-.004.038-.027.062-.031a2.97 2.97 0 0 0 1.437-.625zm-13.812.031a2.85 2.85 0 0 0 1.562.719h.031l1.907.25l.437.344l-2.125 3.218l-.687-1.593l-.25-.625H7.563z"/></svg></span>
+            <div>
+              <h4>Award Winning</h4>
+              <p>Honored with multiple awards for delivering fresh, organic produce and maintaining the highest farming standards.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="counter-section">
+    <div class="counter-box">
+      <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z"/></svg></div>
+      <p>Years of Experience</p>
+      <div class="counter" data-target="40" data-suffix="+">0</div>
+    </div>
+  
+    <div class="counter-box">
+      <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 1200 1200"><path fill="currentColor" d="M596.847 188.488c-103.344 0-187.12 97.81-187.12 218.465c0 83.678 40.296 156.352 99.468 193.047l-68.617 31.801l-182.599 84.688c-17.64 8.821-26.444 23.778-26.444 44.947v201.102c1.451 25.143 16.537 48.577 40.996 48.974h649.62c27.924-2.428 42.05-24.92 42.325-48.974V761.436c0-21.169-8.804-36.126-26.443-44.947l-175.988-84.688l-73.138-34.65c56.744-37.521 95.061-108.624 95.061-190.197c-.001-120.656-83.778-218.466-187.121-218.466m-301.824 76.824c-44.473 1.689-79.719 20.933-106.497 51.596c-29.62 36.918-44.06 80.75-44.339 124.354c1.819 64.478 30.669 125.518 82.029 157.446L21.163 693.997C7.05 699.289 0 711.636 0 731.041v161.398c1.102 21.405 12.216 39.395 33.055 39.703h136.284V761.436c2.255-45.639 23.687-82.529 62.196-100.531l136.247-64.817c10.584-6.175 20.731-14.568 30.433-25.152c-56.176-86.676-63.977-190.491-27.773-281.801c-23.547-14.411-50.01-23.672-75.419-23.823m608.586 0c-29.083.609-55.96 11.319-78.039 26.444c35.217 92.137 25.503 196.016-26.482 276.52c11.467 13.23 23.404 23.377 35.753 30.434l130.965 62.195c39.897 21.881 60.47 59.098 60.866 100.532v170.707h140.235c23.063-1.991 32.893-20.387 33.093-39.704V731.042c0-17.641-7.05-29.987-21.163-37.045l-202.431-96.618c52.498-38.708 78.859-96.72 79.369-156.117c-1.396-47.012-15.757-90.664-44.339-124.354c-29.866-32.399-66.91-51.253-107.827-51.596"/></svg></div>
+      <p>Farm Partners</p>
+      <div class="counter" data-target="25" data-suffix="+">0</div>
+    </div>
+  
+    <div class="counter-box">
+      <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="currentColor" fill-opacity="0" d="M17 14v4c0 1.66 -1.34 3 -3 3h-6c-1.66 0 -3 -1.34 -3 -3v-4Z"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.5s" values="0;1"/></path><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="48" stroke-dashoffset="48" d="M17 9v9c0 1.66 -1.34 3 -3 3h-6c-1.66 0 -3 -1.34 -3 -3v-9Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="48;0"/></path><path stroke-dasharray="14" stroke-dashoffset="14" d="M17 9h3c0.55 0 1 0.45 1 1v3c0 0.55 -0.45 1 -1 1h-3"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="14;0"/></path><mask id="SVGnGEayvOG"><path stroke="#fff" d="M8 0c0 2-2 2-2 4s2 2 2 4-2 2-2 4 2 2 2 4"><animateMotion calcMode="linear" dur="3s" path="M0 0v-8" repeatCount="indefinite"/></path></mask><rect width="24" height="0" y="7" fill="currentColor" mask="url(#SVGnGEayvOG)"><animate fill="freeze" attributeName="y" begin="0.8s" dur="0.6s" values="7;2"/><animate fill="freeze" attributeName="height" begin="0.8s" dur="0.6s" values="0;5"/></rect></g></svg></div>
+      <p>Fresh Products</p>
+      <div class="counter" data-target="20" data-suffix="+">0</div>
+    </div>
+  
+    <div class="counter-box">
+      <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="currentColor" d="m9 20.42l-6.21-6.21l2.83-2.83L9 14.77l9.88-9.89l2.83 2.83z"/></svg></div>
+      <p>Happy Customers</p>
+      <div class="counter" data-target="100" data-suffix="+">0</div>
+    </div>
+  </section>
+
+    <section class="features">
+      
+      <div class="container">
+        <div class="card-services">
+          <h4>SERVICES</h4>
+          <h1>Organic Farm <br> Services</h1>
+          <p>We provide fresh, natural, and chemical-free farm products, grown with care and delivered with trust.</p>
+          <div class="contact-button"><button class="btn explore"> Contact Us</button></div>
+        
+        
+        </div>
+        <div class="card">
+          <div class="card-top">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path fill="currentColor" fill-rule="evenodd" d="M18.5 7.414c0-1.782-2.154-2.674-3.414-1.414L6.5 14.586C5.24 15.846 6.132 18 7.914 18h3.469a8.3 8.3 0 0 1-.277 2.4l-.761 2.842c-.882 3.293-1.135 6.912.75 9.753A15.7 15.7 0 0 0 24 40v2h-5v2h9.5v-2H26v-2.101a15.7 15.7 0 0 0 8.733-3.924A13.9 13.9 0 0 1 29.478 37C22.071 37 16 31.216 16 24a1 1 0 0 1 2 0c0 6.039 5.102 11 11.478 11c3.525 0 6.67-1.521 8.772-3.905q.099-.112.22-.187c.5-1.09.877-2.248 1.113-3.455c.369-1.892.914-3.784 2.078-5.32c.483-.637-.06-1.536-.848-1.406L27.698 22.89a5 5 0 0 1-5.2-2.533l-3.32-6.067l2.02-1.795C22.574 11.273 21.709 9 19.87 9H18.5zm-.307 5.076L19.87 11H18.5a2 2 0 0 1-2-2V7.414l-2.644 2.644q.329-.058.675-.058a3.88 3.88 0 0 1 3.403 2.017zm-7.485.716L7.914 16h3.159l-.298-1.148a3.9 3.9 0 0 1-.067-1.646M14 14a1 1 0 1 0 0-2a1 1 0 0 0 0 2" clip-rule="evenodd"/></svg></div>
+          
+          </div>
+          <h3>Healthy Animals</h3>
+          <p>Maintaining animal health through organic feed and proper care.</p>
+          <a href="#" class="card-link">Learn More <span>→</span></a>
+        </div>
+        <div class="card">
+          <div class="card-top">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M17.657 2.515a1 1 0 0 1 .993.883l.007.117v.414l.414-.414a1 1 0 0 1 1.497 1.32l-.083.094l-.414.414h.414a1 1 0 0 1 .117 1.993l-.117.007h-2.057c1.265 2.176.654 5.066-1.553 6.5l-.205.126l-11.01 6.423c-1.293.754-2.74-.634-2.114-1.934l.062-.118l6.423-11.01c1.344-2.304 4.209-3.02 6.426-1.868l.2.11V3.515a1 1 0 0 1 1-1m-4.95 10.192a1 1 0 0 0-1.497 1.32l.083.094l1.06 1.06a1 1 0 0 0 1.498-1.32l-.083-.093zm-2.121-4.95a1 1 0 0 0 0 1.414L12 10.586a1 1 0 0 0 1.414-1.415L12 7.757a1 1 0 0 0-1.414 0"/></g></svg></div>
+          
+          </div>
+          <h3>Fresh Vegetables</h3>
+          <p>Grown naturally without chemicals, straight from our farm.</p>
+          <a href="#" class="card-link">Learn More <span>→</span></a>
+        </div>
+        <div class="card">
+          <div class="card-top">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M15 2a1 1 0 0 1 .117 1.993L15 4c-.693 0-1.33.694-1.691 1.552a5.1 5.1 0 0 1 1.982-.544L15.556 5C18.538 5 21 8.053 21 11.32c0 3.547-.606 5.862-2.423 8.578-1.692 2.251-4.092 2.753-6.41 1.234a.31.31 0 0 0-.317-.01c-2.335 1.528-4.735 1.027-6.46-1.27C3.607 17.184 3 14.868 3 11.32l.004-.222C3.112 7.917 5.53 5 8.444 5c.94 0 1.852.291 2.688.792C11.551 3.842 12.95 2 15 2M7.966 8.154C6.606 9.012 6 10.214 6 12a1 1 0 0 0 2 0c0-1.125.28-1.678 1.034-2.154a1 1 0 1 0-1.068-1.692"/></svg></div>
+          
+          </div>
+          <h3>Organic Greens</h3>
+          <p>Leafy greens packed with vitamins and farm-fresh goodness.</p>
+          <a href="#" class="card-link">Learn More <span>→</span></a>
+        </div>
+        <div class="card">
+          <div class="card-top">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 256 256"><path fill="currentColor" d="M80 172a12 12 0 1 1-12-12a12 12 0 0 1 12 12m40 0a52 52 0 1 1-52-52a52.06 52.06 0 0 1 52 52m-24 0a28 28 0 1 0-28 28a28 28 0 0 0 28-28m152 16a36 36 0 0 1-71.77 4H144a8 8 0 0 1-8-8v-12a68.07 68.07 0 0 0-68-68H40a8 8 0 0 1 0-16h8V56h-8a8 8 0 0 1 0-16h120a8 8 0 0 1 0 16h-8v41.88l24 6.5V72a8 8 0 0 1 16 0v36.71l36.39 9.86l.21.06A15.89 15.89 0 0 1 240 134v31.46a35.8 35.8 0 0 1 8 22.54m-20 0a16 16 0 1 0-16 16a16 16 0 0 0 16-16"/></svg></div>
+          
+          </div>
+          <h3>Fresh Fruits</h3>
+          <p>Seasonal fruits grown with care for a healthy lifestyle.</p>
+          <a href="#" class="card-link">Learn More <span>→</span></a>
+        </div>
+        <div class="card">
+          <div class="card-top">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M15 2a1 1 0 0 1 .117 1.993L15 4c-.693 0-1.33.694-1.691 1.552a5.1 5.1 0 0 1 1.982-.544L15.556 5C18.538 5 21 8.053 21 11.32c0 3.547-.606 5.862-2.423 8.578-1.692 2.251-4.092 2.753-6.41 1.234a.31.31 0 0 0-.317-.01c-2.335 1.528-4.735 1.027-6.46-1.27C3.607 17.184 3 14.868 3 11.32l.004-.222C3.112 7.917 5.53 5 8.444 5c.94 0 1.852.291 2.688.792C11.551 3.842 12.95 2 15 2M7.966 8.154C6.606 9.012 6 10.214 6 12a1 1 0 0 0 2 0c0-1.125.28-1.678 1.034-2.154a1 1 0 1 0-1.068-1.692"/></svg></div>
+          
+          </div>
+          <h3>Modern Tools & Machines</h3>
+          <p>Using advanced technology to improve farming and ensure better harvests.</p>
+          <a href="#" class="card-link">Learn More <span>→</span></a>
+        </div>
+      </div>
+    </section>
+    
+
+    <footer class="og-footer">
+      <div class="footer-container">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span>🌱</span> OG Farm
+          </div>
+
+          <p>
+            Fresh from the farm, straight to your table.
+            Quality agricultural products you can trust.
+          </p>
+
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">◎</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="WhatsApp">◉</a>
+          </div>
+        </div>
+
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+
+          <a href="index.html">Home</a>
+          <a href="product.html">Products</a>
+          <a href="About.html">About Us</a>
+          <a href="Reviews.html">Reviews</a>
+        </div>
+
+
+        <!-- Customer Care -->
+        <div class="footer-column">
+          <h3>Customer Care</h3>
+
+          <a href="#">FAQs</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Make an Inquiry</a>
+          <a href="#">Leave a Review</a>
+          <a href="#">Help Center</a>
+        </div>
+
+
+        <!-- Contact -->
+        <div class="footer-column contact-column">
+          <h3>Get In Touch</h3>
+
+          <p>📍 Lagos, Nigeria</p>
+          <p>📞 +234 808 414 2624</p>
+          <p>✉️ ogfarms@Vnicom.com</p>
+
+          <div class="footer-badge">
+            🌾 Fresh • Local • Trusted
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+
+        <p>
+          © 2026 <strong>OG Farm</strong>. All rights reserved.
+        </p>
+
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="navigation.js"></script>
+</body>
+</html>
